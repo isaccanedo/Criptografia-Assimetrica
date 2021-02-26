@@ -27,3 +27,16 @@ O algoritmo é basicamente uma combinação de duas funções - função de crip
 Em SSL / TLS e outros certificados digitais, ambos os métodos - simétrico e assimétrico - são empregados. Agora, você deve estar se perguntando: 'Por que ambos? A criptografia assimétrica não deveria ser usada por ser mais segura? "Com certeza, é mais segura, mas vem com uma armadilha. Uma grande desvantagem quando se trata de criptografia de chave pública é o tempo computacional. Como a verificação e as funções são aplicadas de ambos os lados, isso retarda o processo significativamente. É aí que a criptografia simétrica vem e salva o dia.
 
 Primeiro, quando duas partes (navegador e servidor, no caso de SSL) se cruzam, elas validam a chave privada e pública uma da outra por meio da criptografia assimétrica. Assim que a verificação for bem-sucedida e ambos souberem com quem estão falando, a criptografia dos dados será iniciada - por meio da criptografia simétrica. Economizando assim um tempo significativo e atendendo aos propósitos de confidencialidade e proteção de dados. Todo esse processo é chamado de handshake SSL/TLS. 
+
+
+Opts are set via environment variables
+
+| Criptografia simétrica                                   | Criptografia Assimétrica                               |
+|----------------------------------------------------------|-------------------------------------------|
+| A criptografia simétrica consiste em uma das chaves      |
+| para criptografia e descriptografia.                     |
+|----------------------------------------------------------|
+| A criptografia simétrica é muito mais rápida em          |
+| comparação com o método assimétrico.                     | 
+    
+
