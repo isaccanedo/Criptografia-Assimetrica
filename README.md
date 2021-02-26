@@ -15,3 +15,5 @@ A criptografia assimétrica usa duas chaves distintas, mas relacionadas. Uma cha
 Vamos entender isso com um exemplo simples de criptografia assimétrica.
 
 Finja que você é uma agência de espionagem e precisa criar um mecanismo para seus agentes se reportarem com segurança. Você não precisa de comunicação bidirecional, eles têm seus pedidos, você só precisa de relatórios regulares detalhados vindos deles. A criptografia assimétrica permitiria a criação de chaves públicas para os agentes criptografarem suas informações e uma chave privada na sede, que é a única maneira de descriptografar tudo. Isso fornece uma forma impenetrável de comunicação unilateral.
+
+<img src="asymmetric-encryption.png">
