@@ -31,12 +31,20 @@ Primeiro, quando duas partes (navegador e servidor, no caso de SSL) se cruzam, e
 
 Opts are set via environment variables
 
-| Criptografia simétrica                                   | Criptografia Assimétrica                               |
-|----------------------------------------------------------|-------------------------------------------|
-| A criptografia simétrica consiste em uma das chaves      |
-| para criptografia e descriptografia.                     |
-|----------------------------------------------------------|
-| A criptografia simétrica é muito mais rápida em          |
-| comparação com o método assimétrico.                     | 
-    
-
+| Criptografia simétrica                                   | Criptografia Assimétrica                                       |
+|----------------------------------------------------------|----------------------------------------------------------------|
+| A criptografia simétrica consiste em uma das chaves      | A criptografia assimétrica consiste em duas chaves 
+| para criptografia e descriptografia.                     | criptográficas conhecidas como chave pública e chave privada.
+|                                                          |
+| A criptografia simétrica é muito mais rápida em          | Como a criptografia assimétrica incorpora duas chaves separadas, 
+| comparação com o método assimétrico.                     | o processo fica consideravelmente mais lento.
+|                                                          |
+| RC4                                                      | RSA
+|                                                          |
+| AES                                                      | Diffie-Hellman
+| 
+| DES
+|
+| 3DES
+|
+| QUAD
