@@ -1,4 +1,4 @@
-# Criptografia-assim-trica
+# Criptografia-Assimetrica
 :computer: # Criptografia Assimétrica
 
 ## Aprenda o que é criptografia assimétrica, como funciona e o que faz
