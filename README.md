@@ -17,3 +17,13 @@ Vamos entender isso com um exemplo simples de criptografia assimétrica.
 Finja que você é uma agência de espionagem e precisa criar um mecanismo para seus agentes se reportarem com segurança. Você não precisa de comunicação bidirecional, eles têm seus pedidos, você só precisa de relatórios regulares detalhados vindos deles. A criptografia assimétrica permitiria a criação de chaves públicas para os agentes criptografarem suas informações e uma chave privada na sede, que é a única maneira de descriptografar tudo. Isso fornece uma forma impenetrável de comunicação unilateral.
 
 <img src="asymmetric-encryption.png">
+
+## Como as duas chaves são geradas?
+No coração da criptografia assimétrica está um algoritmo criptográfico. Este algoritmo usa um protocolo de geração de chave (um tipo de função matemática) para gerar um par de chaves. Ambas as teclas estão matematicamente conectadas uma com a outra. Essa relação entre as chaves difere de um algoritmo para outro.
+
+O algoritmo é basicamente uma combinação de duas funções - função de criptografia e função de descriptografia. Para afirmar o óbvio, a função de criptografia criptografa os dados e a função de descriptografia os descriptografa.
+
+## É assim que a criptografia assimétrica é usada em certificados SSL/TLS
+Em SSL / TLS e outros certificados digitais, ambos os métodos - simétrico e assimétrico - são empregados. Agora, você deve estar se perguntando: 'Por que ambos? A criptografia assimétrica não deveria ser usada por ser mais segura? "Com certeza, é mais segura, mas vem com uma armadilha. Uma grande desvantagem quando se trata de criptografia de chave pública é o tempo computacional. Como a verificação e as funções são aplicadas de ambos os lados, isso retarda o processo significativamente. É aí que a criptografia simétrica vem e salva o dia.
+
+Primeiro, quando duas partes (navegador e servidor, no caso de SSL) se cruzam, elas validam a chave privada e pública uma da outra por meio da criptografia assimétrica. Assim que a verificação for bem-sucedida e ambos souberem com quem estão falando, a criptografia dos dados será iniciada - por meio da criptografia simétrica. Economizando assim um tempo significativo e atendendo aos propósitos de confidencialidade e proteção de dados. Todo esse processo é chamado de handshake SSL/TLS. 
