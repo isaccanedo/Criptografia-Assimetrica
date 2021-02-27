@@ -35,6 +35,7 @@ Opts are set via environment variables
 |----------------------------------------------------------|------------------------------------------------------------------|
 | A criptografia simétrica consiste em uma das chaves      | A criptografia assimétrica consiste em duas chaves               |
 | para criptografia e descriptografia.                     | criptográficas conhecidas como chave pública e chave privada.    |
+|----------------------------------------------------------|------------------------------------------------------------------|
 
 | A criptografia simétrica é muito mais rápida em          | Como a criptografia assimétrica incorpora duas chaves separadas, | 
 | comparação com o método assimétrico.                     | o processo fica consideravelmente mais lento.
